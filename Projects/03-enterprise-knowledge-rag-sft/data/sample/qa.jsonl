@@ -1,0 +1,3 @@
+{"id":"qa_0001","question":"出差住宿超标后还能报销吗？","answerable":true,"gold_chunk_ids":["expense-policy-v3#0000"],"allowed_groups":["all_staff"],"split":"train"}
+{"id":"qa_0002","question":"VPN 连续登录失败应该怎么处理？","answerable":true,"gold_chunk_ids":["it-vpn-guide-v2#0000"],"allowed_groups":["all_staff"],"split":"train"}
+{"id":"qa_0003","question":"公司今年端午节发什么礼品？","answerable":false,"gold_chunk_ids":[],"allowed_groups":["all_staff"],"split":"dev"}

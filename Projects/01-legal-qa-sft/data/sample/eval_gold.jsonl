@@ -1,0 +1,2 @@
+{"id":"synthetic-eval-001","task":"classification","input":"合成案件描述甲","target_label":"TEST_LABEL_A","is_test_fixture":true}
+{"id":"synthetic-eval-002","task":"classification","input":"合成案件描述乙","target_label":"TEST_LABEL_B","is_test_fixture":true}

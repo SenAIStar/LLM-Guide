@@ -1,0 +1,1 @@
+{"id":"synthetic-triplet-001","group_id":"synthetic-case-002","reference":["【合成参考材料】提交材料甲并完成核验后，方可办理测试事项乙。"],"input":"合成问题：材料甲尚未提交，是否可以办理事项乙？","output":"合成回答：根据给定参考材料，目前条件不足；应先补充材料并完成核验。","is_test_fixture":true}

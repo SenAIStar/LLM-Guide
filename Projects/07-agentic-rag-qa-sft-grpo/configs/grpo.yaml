@@ -1,0 +1,17 @@
+model: Qwen/Qwen3-4B-Instruct-2507
+algorithm: grpo
+group_size: 8
+max_retrieval_rounds: 2
+max_response_tokens: 1024
+kl_coef: 0.02
+reward_weights:
+  gold_evidence_hit: 0.25
+  tool_validity: 0.15
+  answer_correct: 0.30
+  citation_support: 0.20
+  boundary_correct: 0.10
+penalties:
+  invalid_tool_call: -0.30
+  repeated_query: -0.20
+  unsupported_claim: -0.40
+  retrieval_round_cost: -0.03

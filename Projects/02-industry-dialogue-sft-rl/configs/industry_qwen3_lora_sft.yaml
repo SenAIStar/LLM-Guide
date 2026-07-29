@@ -1,0 +1,46 @@
+### Model
+model_name_or_path: Qwen/Qwen3-4B-Instruct-2507
+trust_remote_code: true
+
+### Training method
+stage: sft
+do_train: true
+finetuning_type: lora
+lora_target: all
+lora_rank: 8
+lora_alpha: 16
+lora_dropout: 0.05
+
+### Data
+dataset_dir: data
+dataset: industry_sft_train
+eval_dataset: industry_sft_dev
+template: qwen3_nothink
+cutoff_len: 2048
+train_on_prompt: false
+overwrite_cache: true
+preprocessing_num_workers: 8
+
+### Output
+output_dir: outputs/qwen3-industry-sft-lora
+logging_steps: 10
+save_steps: 200
+plot_loss: true
+overwrite_output_dir: true
+
+### Optimization
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 16
+learning_rate: 1.0e-4
+num_train_epochs: 3.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+ddp_timeout: 180000000
+
+### Evaluation
+eval_strategy: steps
+eval_steps: 200
+per_device_eval_batch_size: 1
+
+# These values are experiment starting points, not claimed optima.

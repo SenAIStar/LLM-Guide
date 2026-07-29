@@ -1,0 +1,18 @@
+model: Qwen/Qwen3-4B-Instruct-2507
+algorithm: grpo
+group_size: 8
+max_steps: 20
+max_report_tokens: 4096
+kl_coef: 0.02
+mask_environment_observations: true
+reward_weights:
+  task_coverage: 0.35
+  citation_precision: 0.25
+  citation_completeness: 0.15
+  source_coverage: 0.15
+  conflict_handling: 0.10
+penalties:
+  duplicate_query: -0.10
+  invalid_citation: -0.30
+  unsupported_claim: -0.40
+  step_cost: -0.01

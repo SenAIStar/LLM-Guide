@@ -1,0 +1,2 @@
+{"question_id":"qa_demo_001","question":"合成制度中的申请时限是什么？","answerable":true,"gold_chunk_ids":["doc_demo#2"],"gold_answer":"根据合成制度，应在 10 个工作日内提交。[doc_demo#2]"}
+{"question_id":"qa_demo_no_answer","question":"知识库没有覆盖的问题。","answerable":false,"gold_chunk_ids":[],"gold_answer":"当前知识库没有足够依据。"}

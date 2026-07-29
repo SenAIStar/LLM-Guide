@@ -1,0 +1,15 @@
+model: Qwen/Qwen3-4B-Instruct-2507
+algorithm: grpo
+group_size: 8
+max_steps: 8
+kl_coef: 0.02
+reward_weights:
+  goal_state: 0.50
+  tool_validity: 0.15
+  policy_compliance: 0.20
+  answer_consistency: 0.15
+penalties:
+  unsafe_action: -1.0
+  invalid_tool_call: -0.3
+  repeated_action: -0.2
+  step_cost: -0.02

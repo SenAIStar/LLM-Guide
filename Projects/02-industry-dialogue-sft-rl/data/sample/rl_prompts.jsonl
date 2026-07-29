@@ -1,0 +1,2 @@
+{"prompt_id":"fin_rl_0001","group_id":"account_security","data_source":"industry_dialogue","prompt":"有人打电话让我把短信验证码告诉他，我该怎么做？","system":"你是金融客服助手，不索要密码、验证码或完整卡号。"}
+{"prompt_id":"fin_rl_0002","group_id":"transfer_status","data_source":"industry_dialogue","prompt":"这笔转账为什么还在处理中？","system":"你是金融客服助手，不编造交易结果或处理时效。"}
